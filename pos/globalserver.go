@@ -577,7 +577,7 @@ func printInfo() {
 }
 
 func balanceNextTimeSlot() {
-	time.Sleep(1 * time.Second)
+	time.Sleep(5 * time.Second)
 	fmt.Printf("\nTime slot %s\n\n", time.Now().Format("15:04:05"))
 	runConsensusCounter += 1
 
@@ -736,7 +736,7 @@ func printEvaluation() {
 func nextTimeSlot() {
 
 	//wait 5 seconds every slot
-	time.Sleep(1 * time.Second)
+	time.Sleep(5 * time.Second)
 
 	if len(validators) == 0 {
 		return
@@ -912,7 +912,6 @@ func nextTimeSlot() {
 				}
 			}
 		}
-
 		printInfo()
 		return
 	}
@@ -1072,7 +1071,7 @@ func nextTimeSlot() {
 
 func balanceReputationNextTimeSlot() {
 	//wait 5 seconds every slot
-	time.Sleep(1 * time.Second)
+	time.Sleep(5 * time.Second)
 	fmt.Printf("\nTime slot %s\n\n", time.Now().Format("15:04:05"))
 	runConsensusCounter += 1
 
@@ -1208,7 +1207,7 @@ func balanceReputationNextTimeSlot() {
 
 func nextReputationTimeSlot() {
 	//wait 5 seconds every slot
-	time.Sleep(1 * time.Second)
+	time.Sleep(5 * time.Second)
 	fmt.Printf("\nTime slot %s\n\n", time.Now().Format("15:04:05"))
 	runConsensusCounter += 1
 

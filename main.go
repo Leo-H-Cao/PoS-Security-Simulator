@@ -12,14 +12,14 @@ func main() {
 	//10
 	numUsers := 3
 	//20, 50, 70
-	numMal := 4
+	numMal := 7
 	//20
-	committeeSize := 3
+	committeeSize := 4
 	//5
 	delegateSize := 3
 	//pos, slashing, or reputation
-	blockchainType := "reputation"
-	//network_partition, balance
+	blockchainType := "slashing"
+	//network_partition, balance, none
 	attack := "network_partition"
 	pos.Run(runType, numValidators, numUsers, numMal, committeeSize, delegateSize, blockchainType, attack)
 }
